@@ -57,11 +57,11 @@ $ npm start
 ```
 Access API at http://localhost:8000/
 
-### 💻 Run Institucional Interface
+### 💻 Run Web Interface
 
 ```bash
 # Go to web folder
-$ cd institucional-interface
+$ cd web-interface
 
 # Install Dependencies
 $ npm install
@@ -70,34 +70,6 @@ $ npm install
 $ npm start
 ```
 Go to http://localhost:3000/ to see the result.
-
-### 💻 Run Dashboard Interface
-
-```bash
-# Go to web folder
-$ cd dashboard-interface
-
-# Install Dependencies
-$ npm install
-
-# Run Aplication
-$ npm start
-```
-Go to http://localhost:3001/ to see the result.
-
-### 💻 Run Palestras Interface
-
-```bash
-# Go to web folder
-$ cd palestras-interface
-
-# Install Dependencies
-$ npm install
-
-# Run Aplication
-$ npm start
-```
-Go to http://localhost:3002/ to see the result.
 
 
 # :closed_book: License
