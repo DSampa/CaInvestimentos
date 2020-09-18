@@ -1,0 +1,60 @@
+.landing-image-content{height: 100vh;}
+.landing-content{height: 100vh;display: flex;align-items: center;justify-content: center;flex-direction: column;position: absolute;left: 50%;width: 45%;}
+.landing-text-content h5, .landing-text-content h3{font-family: Montserrat;color: var(--color-primary-lighter);}
+.landing-text-content h3{font-size: 2.6rem;font-weight: 500;font-family: Montserrat;margin: 32px 0;}
+.landing-text-content h5{font-size: 1.8rem;font-weight: 500;font-family: Montserrat;}
+.landing-text-content{margin: 0 auto;}
+.opcoes-text-content{padding: 0 2.4rem;}
+.opcoes-text-content p{font: Montserrat;font-weight: 500;font-size: 2.6rem;margin: 1.6rem 0 1.6rem 1.6rem;}
+.opcoes-card{display: grid;grid-template-columns: 1fr 3fr;padding: 2rem 0;}
+.opcoes-imagem{display: flex;align-items: center;justify-content: center;}
+.opcoes-imagem img{width: 200px;height: auto;margin: 0 auto;}
+.opcoes-text-holder {display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.opcoes-text-holder p{font-size: 2.3rem;font-weight: 500;font-family: Montserrat;}
+.opcoes-text-holder span{font-size: 1.7rem;line-height: 2.3rem;}
+.informativo-text-content{display: grid;grid-template-columns: 1fr 2fr;margin-top: 8rem;background-color: var(--color-primary-dark);padding: 3.6rem 8rem;}
+.informativo-image-holder{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.informativo-image-holder img{width: 368px;height: auto;}
+.informativo-image-holder p{font-size: 2.6rem;font-family: Montserrat;font-weight: 500;}
+.informativo-text-holder{display: flex;flex-direction: column;align-items: center;justify-content: center;margin: 0 10rem;}
+.informativo-text-holder p{font-size: 2rem;font-family: Montserrat;font-weight: 500;margin-bottom: 5%;}
+.informativo-text-holder span{font-size: 1.6rem;font-family: Montserrat;font-weight: 500;color: var(--color-primary-lighter);}
+.cadastro-form-content{display: grid;grid-template-columns: 2fr 2fr 2fr;padding: 4rem 8rem;}
+.input-block select{width: 100%;height: 5.6rem;margin-top: 0.8rem;border-radius: 0.8rem;background: rgb(30,30,30,0.2);border: 1px solid var(--color-line-in-white);
+    outline: 0;padding: 0 1.6rem;font: 1.6rem Montserrat;}
+.form-button-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-button-holder button{
+    padding: 1.6rem;
+    border: 1px solid var(--color-line-in-white);
+    font: 500 1.6rem Montserrat;
+    transition: 0.2s;
+}
+.form-button-holder button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media(max-width: 968px){
+    .landing-image-content{grid-template-columns: none;grid-template-rows: 2fr 2fr;height: 1220px;}
+    .landing-content{left: 30%;top: 50%;}
+    .opcoes-card{display: grid;grid-template-columns: none;    grid-template-rows: 1fr 1fr;}
+    .opcoes-imagem {margin: 0 auto;}
+    .opcoes-imagem img{margin: 3.4rem 0;}
+    .informativo-image-holder img{width: 256px;height: auto;}
+    .informativo-text-content{display: grid;grid-template-columns: none;direction: ltr; grid-template-rows: 1fr 2fr;margin: 4rem 0;background-color: var(--color-primary);padding: 3.6rem 1.8rem;}
+    .informativo-text-holder{margin: 0 2rem;}
+    .informativo-text-holder p {
+        margin: 4rem 0;
+        font-size: 1.7rem;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+    .cadastro-form-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 8rem;
+    }
+}

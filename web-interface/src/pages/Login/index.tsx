@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import Input from '../../components/Dashboard/Input'
 import loginBG from '../../assets/images/login2.jpg'
 import './styles.css'
 import api from '../../services/api'
 import { login } from '../../services/auth';
 import { useHistory } from 'react-router-dom'
+import Logo from '../../assets/images/cruzeiro_logo.png'
 function Login() {
     const history = useHistory();
     const [email, setEmail] = useState('')
@@ -31,9 +33,9 @@ function Login() {
                             Opere em conjunto de uma equipe de analistas
                         </span>
                         <div className="text-button-holder">
-                            <a href="">
+                            <Link to="/cadastro_1">
                                 Abrir minha Conta
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="text-holder">
@@ -44,15 +46,16 @@ function Login() {
                             Acesse Já o nosso Homebroke e conheça nosso sistema
                         </span>
                         <div className="text-button-holder">
-                            <a href="">
+                            <Link to="/demo">
                                 Acessar Dashboard
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="login-form-content">
                 <div className="login-form-holder">
+                    <img src={Logo} alt=""/>
                     {error && <p>{error}</p>}
                     <Input name="email" label="Email" onChange={(e) => { setEmail(e.target.value) }} />
                     <Input name="password" label="Senha" type="password" onChange={(e) => { setPassword(e.target.value) }} />

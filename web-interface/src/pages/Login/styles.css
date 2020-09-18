@@ -33,6 +33,7 @@
 .text-button-holder a{
     text-decoration: none;
     font: 500 1.5rem Mukta;
+    color: var(--color-primary-darker);
 
 }
 .login-form-content{
@@ -45,6 +46,10 @@
 }
 .login-form-holder{
     width: 75%;
+}
+.login-form-holder img{
+    width: 100%;
+    height: auto;
 }
 .login-button-holder{
     display: flex;

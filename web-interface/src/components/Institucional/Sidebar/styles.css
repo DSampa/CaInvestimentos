@@ -1,0 +1,105 @@
+.sidebar{
+    position: absolute;
+}
+.sidebar-container {
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    left: -138px;
+    transition: left 0.4s;    
+}
+.side-items-container{display: flex;flex-direction: column;align-items: center;
+    justify-content: center;height: 100%;background-color: var(--color-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);z-index: 150;
+}
+.side-nav-item{margin: 2.4rem 0;text-align: center;width: 135px;}
+.side-link{font:500 1.5rem Montserrat;color: var(--color-primary-dark);text-decoration: none;transition: 0.1s;text-decoration: none !important;}
+.side-link:hover{
+    font:700 1.6rem Montserrat;color: var(--color-primary);
+}
+
+.side-icons-holder{
+    display: flex;flex-direction: column;align-items: center;
+    justify-content: center;height: 100%;background-color: transparent;z-index: 150;
+}
+.sidebar-icons{
+    display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;
+    background-color: var(--color-background-darker);padding: 0 1.3rem;z-index: 110;margin-top: -3.3rem;
+}
+.side-icon-item{
+    margin: 24px 0;
+}
+.side-icon-img{
+    width: 42px;
+    height: 42px;
+    transition: 0.2s; 
+}
+.side-icon-img:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.toggler-button{
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1.6rem;
+    z-index: 120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggler-button img{
+    width: 38px;
+    height: 24px;
+    transition: ease-in-out .2s;
+}
+.toggler-button.focus, .toggler-button:focus{
+    outline: 0;
+    box-shadow: none !important;
+}
+.logo{width: 128px;}
+
+@media(max-width: 968px){
+    .sidebar-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 130vh;
+        z-index: 100;
+        position: fixed;
+        left: -138px;
+        transition: left 0.4s;
+    }
+    .toggler-button-holder {
+        display: flex;
+        height: 100vh;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+    .toggler-button{
+        width: 32px;
+        height: 32px;
+        border: 0;
+        border-radius: 8px;
+        background-color: #1E1E1E;
+        cursor: pointer;
+        outline: none;
+    }
+    .toggler-button img{
+        width: 28px;
+        height: auto;
+    }
+    .side-icon-img{
+        width: 32px;
+        height: 32px; 
+    }
+    .sidebar-icons{
+        width: 7rem;
+    }
+}

@@ -1,0 +1,49 @@
+#container{
+    height: 500px;
+}
+
+P{  
+    font-family: cursive;
+}
+.bot{
+   margin-left: 150px;
+   font-size: 20px;
+}
+.imagem{
+  float: right;
+  height: 350px;
+  width: 700px;
+    margin-top: -240px;
+}
+#container2{
+    height: 1000px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+#container3{
+    height: 700px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.text1{
+    
+    width: 600px;
+
+}
+h2{
+    display: block;
+}
+.text-left{
+    margin-left: 650px;
+    margin-top: -950px;
+    height: 600px;
+}
+.text-left2{
+    margin-left: 650px;
+    margin-top: -630px;
+    height: 600px;
+}
+.img{
+    width: 600px;
+}
+

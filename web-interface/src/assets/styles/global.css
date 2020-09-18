@@ -1,9 +1,9 @@
 :root {
-    --color-background: #F2F2F2;
+    --color-background: #FFFFFF;
     --color-background-darker: #EAEAEA;
     --color-background-secondary: #020202;
     --color-primary-lighter: #F8F8FF;
-    --color-primary-light: #FFFFFF;
+    --color-primary-light: #F2F2F2;
     --color-primary: #1b1b1b;
     --color-primary-dark: #141414;
     --color-primary-darker: #000;
@@ -35,14 +35,30 @@ body,input,button,textarea{
     width: 90vw;
     max-width: 700px;
 }
-.titulo{margin-bottom: 16px;margin-top: 8px;margin-left: 8px;font-family: Mukta;}
-.titulo-card::after{content: "";width: 128px;height: 4px;display: block;background-color: #ffc709;margin-top: 10px;}
+.titulo{color: var(--color-primary-lighter);margin-bottom: 16px;margin-top: 8px;margin-left: 8px;font-family: Mukta;}
+.titulo::after{content: "";width: 128px;height: 4px;display: block;background-color: #ffc709;margin: 0.8rem 0;margin-left: 1rem;}
+.titulo-centralizado{color: var(--color-primary-lighter);text-align:center;margin-bottom: 16px;margin-top: 8px;margin-left: 8px;font-family: Mukta;}
+.titulo-centralizado::after{content: "";width: 128px;height: 4px;display: block;background-color: #ffc709;margin: 0.8rem auto;}
+.titulo-centralizado-black{color: var(--color-primary);text-align: center;margin: 24px auto;font-family: Mukta;}
+.titulo-centralizado-black::after{content: "";width: 128px;height: 4px;display: block;background-color: #ffc709;margin: 0.8rem auto;}
 .titulo-black{color: var(--color-primary);margin-bottom: 16px;margin-top: 8px;margin-left: 8px;font-family: Montserrat;}
 .titulo-black::after{content: "";width: 128px;height: 4px;display: block;background-color: #ffc709;margin-top: 10px;}
-.subtitulo-black{color: var(--color-primary);margin-bottom: 16px;margin-top: 8px;margin-left: 8px;font-family: Montserrat;}
+.subtitulo-black{color: var(--color-primary);margin-bottom: 16px;margin-top: 8px;font-family: Montserrat;}
 .subtitulo-black::after{content: "";width: 64px;height: 4px;display: block;background-color: #ffc709;margin-top: 10px;margin-bottom: 16px;}
+.page-container{
+    height: 100vh;
+}
+.form-item{padding: 1.8rem 1.6rem;}
 @media (min-width: 700px){
     :root{
         font-size: 62.5%;
     }
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
