@@ -1,49 +1,330 @@
-#container{
-    height: 500px;
+
+.tag-body{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+
 }
 
-P{  
-    font-family: cursive;
+
+.div-principal{
+ height: 100vh;
+
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(20rem,1fr)) ;
+ grid-template-rows: 1fr 1fr 1fr ;
+grid-template-areas: " header header header "
+" main main main"
+"aside aside aside "
+
+;
+row-gap:10%
+
+;
 }
-.bot{
-   margin-left: 150px;
-   font-size: 20px;
+
+.container-header{
+    object-fit: cover;    
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-area: header ;
+    border-top: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+    margin-bottom: px;
 }
-.imagem{
-  float: right;
-  height: 350px;
-  width: 700px;
-    margin-top: -240px;
-}
-#container2{
-    height: 1000px;
-    margin-top: 20px;
-    font-family: cursive;
-}
-#container3{
-    height: 700px;
-    margin-top: 20px;
-    font-family: cursive;
-}
-.text1{
+.conteiner-main{
     
-    width: 600px;
+    height: 100%;
+    width: 100%;
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(40rem,1fr )) ;
+ grid-template-rows: 1fr 1fr 1fr ;
+ grid-template-areas: 
 
+ " imgconteudo texty texty " 
+
+ "imgnuvem textb textb "
+  " imgchat textg textg "
+  "imgrecurso textr textr"
+  ;
+  column-gap: 20%;
+ 
+
+    background-color: whitesmoke;
+    gap: 5%;
+    grid-area: main;
+
+    
 }
-h2{
-    display: block;
+
+.conteiner-aside{
+background-image: url(../../assets/images/background-login.jpg);
+    height: 100%;
+   border-top: 3px solid yellow;
+   border-bottom: 3px solid yellow;
+ display:grid;
+ grid-template-columns: repeat(auto-fill, minmax(60rem,1fr )) ;
+ grid-template-rows: 1fr   ;
+ grid-template-areas: 
+ "foto"
+"aside1 "
+"side2"
+"aside3"; 
+ row-gap: 0.5rem;
+    grid-area: aside;    
 }
-.text-left{
-    margin-left: 650px;
-    margin-top: -950px;
-    height: 600px;
+
+
+
+.main-text1{
+    box-shadow: 0 7px 7px -1px #989898;
+    border-top: 3px solid darkred;
+    border-radius: 2%;
+    grid-area: texty;
+    display:grid;
+    margin-right: 8rem;
+  
 }
-.text-left2{
-    margin-left: 650px;
-    margin-top: -630px;
-    height: 600px;
+.main-text2{
+    box-shadow: 0 7px 7px -1px #989898;
+    border-top: 3px solid blue;
+    border-radius: 2%;
+    grid-area:textb;
+    display:grid;
+    margin-right: 8rem;
+   
 }
+
+.main-text3{
+    box-shadow: 0 7px 7px -1px #989898;
+    border-top: 3px solid green;
+    border-radius: 2%;
+    grid-area:textg;
+    display:grid;
+    margin-right: 8rem;
+    
+}
+
+.main-text4{
+  box-shadow: 0 7px 7px -1px #989898;
+  border-top: 3px solid purple;
+    border-radius: 2%;
+    grid-area:textr;
+    display:grid;
+    margin-right: 8rem;
+   
+   
+}
+
+.chat{
+    grid-area:imgchat;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 7px 7px -1px #989898;   
+    border-top: 3px solid green;
+    border-radius: 2%;
+    display:grid;
+    width: 33rem;
+    margin-left: 5rem;
+}
+
+.nuvem{
+    grid-area:imgnuvem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 7px 7px -1px #989898;
+    border-top: 3px solid blue;
+    border-radius: 2%;
+    display:grid;
+    width: 28rem;
+    margin-left: 8rem;
+   
+}
+
+.conteudo{
+    grid-area:imgconteudo;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 7px 7px -1px #989898;
+    border-top: 3px solid darkred;
+    margin:auto;
+    border-radius: 2%;
+    display:grid;
+}
+.transferencia-recurso{
+    grid-area: imgrecurso;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 10px 10px -1px #989898;
+    border-top: 3px solid purple;
+border-radius: 2%;
+display:grid;
+margin-left: 8rem;
+width: 30rem;
+height: 30rem;
+}
+
 .img{
-    width: 600px;
+    width:30%;
+    height: 30%;
+    margin-left: 60%;
+    margin-top: 15%;
+
+}
+.foto{
+    grid-area:foto;
+
+ 
+   margin-left: 25rem;
+   margin-bottom: 2rem;
+    clip-path: circle(16rem at center );
+
 }
 
+.aside1{
+    box-shadow: 0 1rem 3rem -0.4rem #989898;
+    border:0.2rem solid yellow;
+      border-radius: 2%;
+      grid-area:aside1;
+      display:grid;
+      margin-bottom: 7%;
+      width: 80rem;
+margin-left:30rem;
+margin-top: 1rem;
+}
+
+.aside2{
+    box-shadow: 0 1rem 3rem -0.4rem #989898;
+    border:  0.2rem solid yellow;
+      border-radius: 2%;
+      grid-area:aside2;
+      display:grid;
+      margin-bottom: 7%;
+      width: 80rem;
+margin-left:30rem;
+margin-top: 5rem;
+}
+
+.aside3{
+    box-shadow: 0 1rem 3rem -0.4rem #989898;
+    border:  0.2rem solid yellow;
+      border-radius: 2%;
+      grid-area:aside3;
+      display:grid;
+      margin-bottom: 7%;
+      width: 80rem;
+margin-left:30rem;
+margin-top: 5rem;
+
+}
+
+.foto{
+
+    grid-area:foto;
+    display:grid;
+    margin-bottom: 7%;
+}
+
+
+@media{
+
+    .Comece-a-investir, .cruzeiro-investimentos {
+        color:whitesmoke;      
+        width:20%;
+       
+        margin-left: 5%;
+        
+    border-bottom:3px solid gold;
+    }
+    .tag-p{
+
+        color:whitesmoke;
+        width:35%;
+      
+        margin-left: 5%;
+    }
+    
+    .bot{
+      
+        width:15%;
+        margin-left: 60%;
+      margin:none;
+      background-color:#1f1f1f;
+      border-color: yellow;
+      color: whitesmoke;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;      
+      cursor: pointer;
+      border-radius: 15%;
+      
+    }
+
+
+
+
+
+  .modalidade, .banco, .agencia{
+      color:purple;
+    
+  }
+
+
+.aside1{
+    color:whitesmoke;
+    width:80rem;
+    padding: 4rem;
+   background-color: hsla(0,0%, 0%, 0.3);
+  
+   
+}
+.aside2{
+    color:whitesmoke;
+    width:80rem;
+    padding: 4rem;
+   background-color: hsla(0,0%, 0%, 0.8);
+  
+   
+}
+.aside3{
+    color:whitesmoke;
+    width:80rem;
+    padding: 4rem;
+   background-color: hsla(0,0%, 0%, 0.7);
+  
+   
+}
+
+}
+
+@media(max-width: 968px){
+    .landing-image-content{grid-template-columns: none;grid-template-rows: 2fr 2fr;height: 1220px;}
+    .landing-content{left: 30%;top: 50%;}
+    .opcoes-card{display: grid;grid-template-columns: none;    grid-template-rows: 1fr 1fr;}
+    .opcoes-imagem {margin: 0 auto;}
+    .opcoes-imagem img{margin: 3.4rem 0;}
+    .informativo-image-holder img{width: 256px;height: auto;}
+    .informativo-text-content{display: grid;grid-template-columns: none;direction: ltr; grid-template-rows: 1fr 2fr;margin: 4rem 0;background-color: var(--color-primary);padding: 3.6rem 1.8rem;}
+    .informativo-text-holder{margin: 0 2rem;}
+    .informativo-text-holder p {
+        margin: 4rem 0;
+        font-size: 1.7rem;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+    .cadastro-form-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 8rem;
+    }
+}
+
+.conteiner-main{
+    background-color: whitesmoke;
+    margin-bottom: 8rem;
+}
+
+
+.copi{
+    color:whitesmoke;
+    size: 2%;
+}
