@@ -6,7 +6,7 @@
         <img src="https://img.shields.io/badge/-Bruno_Oliveira-8257E5?style=flat&logo=Linkedin&logoColor=white">
     </a>
     <a href="https://www.linkedin.com/in/diego-esper-76164b157/">
-        <img src="https://img.shields.io/badge/-Diego_Espers-8257E5?style=flat&logo=Linkedin&logoColor=white">
+        <img src="https://img.shields.io/badge/-Diego_Esper-8257E5?style=flat&logo=Linkedin&logoColor=white">
     <a href="https://www.linkedin.com/in/edson-rodrigues-de-paulo-bb8b061a0/">
         <img src="https://img.shields.io/badge/-Edson_Rodrigues-8257E5?style=flat&logo=Linkedin&logoColor=white">
     </a>
