@@ -22,6 +22,7 @@
 <div align="center">
   <sub>Cruzeiro Investimentos by Cruzeiro Analytica. Built with ❤︎ by: </br>
     <a href="https://github.com/bruno-oliveira173">Bruno Oliveira - RGM: 21549931</a></br>
+    <a href="https://github.com/DSampa">Diego Esper - RGM: 19979304</a></br>
     <a href="https://github.com/Edsondrigues">Edson Rodrigues - RGM: 22000101</a></br>
     <a href="https://github.com/GAP-BooT">Guilherme Assunção - RGM: 20552181</a></br>
     <a href="https://github.com/hx-gh">Gustavo Henrique - RGM: 21417865</a></br>
